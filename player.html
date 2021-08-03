@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<head>
+    <title>mgcStats</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        html {
+            box-sizing: border-box;
+            height: 100%;
+            background-color: dimgrey;
+        }
+
+        header {
+            background-color: rgb(49, 46, 46);
+        }
+
+        .logo {
+            width: 125px;
+            padding: 4px;
+            height: 65px;
+        }
+
+        .header-right {
+            float: right;
+            clear: left;
+            padding: 25px;
+        }
+
+        .main-left {
+            border: 5px solid rgb(49, 46, 46);
+            float: left;
+            width: 50%;
+            margin-right: 25px;
+
+
+        }
+
+
+
+        .player-social-info {
+            float: right;
+            width: 26%;
+            padding: 15px;
+        }
+
+        .player-personal-info {
+            float: left;
+            width: 28%;
+            padding: 15px;
+        }
+
+        .profile-logo {
+            width: 220px;
+            height: 250px;
+            padding: 15px;
+            float: left;
+        }
+
+        table,
+        th {
+            float: left;
+            margin-right: 15px;
+        }
+
+        .description {
+            margin: 30px;
+
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            margin: auto auto;
+            background-color: rgb(49, 46, 46);
+            color: white;
+            text-align: left;
+            padding: .5px;
+            clear: left; 
+            
+        }
+
+        .footer-right {
+            float: right;
+            margin: auto auto;
+            padding: 20px;
+        }
+
+        .footer-left {
+            float: left;
+            margin-left: 5px;
+        }
+
+        .container {
+            border: 5px solid green;
+            margin: auto;
+            
+        }
+        #stats-table table {
+            
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+
+  
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img class="logo" src="logo.jpg">
+             
+            <a class="header-right" href="#"> Sign-IN</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="top">
+            <img class="profile-logo" src="https://www.cricbuzz.com/a/img/v1/152x152/i1/c170673/kl-rahul.jpg">
+            <div class="player-personal-info">
+                <h1 style="text-align: left;">K L Rahul</h1>
+                <table>
+                    <tr>
+                        <th>Born</th>
+
+                        <td>14 March</td>
+                    </tr>
+                    <tr>
+                        <th>Height</th>
+
+                        <td>6.0'</td>
+                    </tr>
+                    <tr>
+                        <th>Role</th>
+
+                        <td>Batsman</td>
+                    </tr>
+                    <tr>
+                        <th>Batting Style</th>
+
+                        <td>Right Handed</td>
+
+                    </tr>
+                    <tr>
+                        <th>Bowling</th>
+
+                        <td>Right Handed Slow Spin</td>
+                    </tr>
+                    <tr>
+                        <th>Keeper</th>
+
+                        <td>Yes</td>
+                    </tr>
+                </table>
+                
+
+            </div>
+            <div class="description">
+
+
+
+                <p class="description">
+                    Likes to take on fast bowlers head-on, while applies a very safe approach towards spin bowlers.
+                    Still a very strong attacking Batsman
+                    and a very strong component of any team he plays for.
+                    He has knack for finding gap shots. Very athletic while fieldinng and keeping. A true genius from
+                    Karnatak and if keeps
+                    his momentum going then surely a future hall of famer.
+                </p>
+                <p><ul style="list-style-type:none;">
+                <li><a href=" #"><i class="fa fa-twitter"
+                        style="font-size:20px;color:rgb(16, 62, 136);"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook" style="font-size:20px;color:rgb(16, 62, 136);"></i></a>
+                    </li>
+                </ul></p>
+                <ul>
+                    <li>PUBG : </li>
+                    <li>
+                        FREE-FIRE :
+                    </li>
+                    <li>CHESS.COM : </li>
+                </ul>
+
+
+               
+
+            </div>
+        </div>
+
+
+    </main>
+    <div class="container">
+        <div class="stats">
+            <table id="stats-table">
+                <thead>
+                <caption><em>Player Statistics</em></caption>
+                <tr>
+                    <th>Matches</th>
+                    <th>Innings</th>
+                    <th>Runs</th>
+                    <th>Wickets</th>
+                    <th>HS</th>
+                    <th>BB</th>
+                    <th>Overs</th>
+                    <th>3+ W</th>
+                    <th>5+ W</th>
+                    <th>Hattricks</th>
+                    <th>30+</th>
+                    <th>50+</th>
+                    <th>100+</th>
+                    <th>Avg</th>
+                    <th>NO</th>
+                    <th>Eco</th>
+                    <th>Catches</th>
+                    <th>Stumps</th>
+                    <th>RO</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>48</th>
+                    <th>39</th>
+                    <th>3053</th>
+                    <th>52</th>
+                    <th>183</th>
+                    <th>32/7</th>
+                    <th>88</th>
+                    <th>7</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>14</th>
+                    <th>8</th>
+                    <th>3</th>
+                    <th>42</th>
+                    <th>11</th>
+                    <th>28.0</th>
+                    <th>27</th>
+                    <th>15</th>
+                    <th>4</th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+
+
+
+
+        <h3 class="footer-left">© 2021 mgcstats || Harsh Raj</h3>
+
+
+        <a href="" id="ic"><i class="fa fa-facebook-f footer-right" style="color: dodgerblue;"></i></a>
+        <a href="" id="ic"><i class="fa fa-twitter footer-right" style="color: dodgerblue;"></i></a>
+        <a href="" id="ic"><i class="fa fa-google-plus-g footer-right" style="color: dodgerblue;"></i></a>
+
+
+
+    </footer>
+</body>
