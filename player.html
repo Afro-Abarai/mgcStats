@@ -57,8 +57,7 @@
             float: left;
         }
 
-        table,
-        th {
+        .new th {
             float: left;
             margin-right: 15px;
         }
@@ -69,7 +68,7 @@
         }
 
         footer {
-            position: fixed;
+            position: relative;
             left: 0;
             bottom: 0;
             width: 100%;
@@ -79,8 +78,8 @@
             color: white;
             text-align: left;
             padding: .5px;
-            clear: left; 
-            
+            clear: left;
+
         }
 
         .footer-right {
@@ -95,25 +94,27 @@
         }
 
         .container {
-            border: 5px solid green;
             margin: auto;
-            
+            padding:25px;
         }
-        #stats-table table {
-            
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 20px;
-    border-collapse: collapse;
+         
+        .stats-table  {
+               
+             text-align: center;
+             margin:5px;
+             padding:5px;
+             margin-left: auto;
+             margin-right: auto;
+             width: 100%;
 
-  
+  border: 4px solid black;
 }
-td {
-    display: table-cell;
-    vertical-align: inherit;
-}
-
         
+
+       /* td {
+            display: table-cell;
+            vertical-align: inherit;
+        }*/
     </style>
 </head>
 
@@ -121,7 +122,7 @@ td {
     <header>
         <div class="header-left">
             <img class="logo" src="logo.jpg">
-             
+
             <a class="header-right" href="#"> Sign-IN</a>
         </div>
     </header>
@@ -131,7 +132,7 @@ td {
             <img class="profile-logo" src="https://www.cricbuzz.com/a/img/v1/152x152/i1/c170673/kl-rahul.jpg">
             <div class="player-personal-info">
                 <h1 style="text-align: left;">K L Rahul</h1>
-                <table>
+                <table class="new">
                     <tr>
                         <th>Born</th>
 
@@ -164,7 +165,7 @@ td {
                         <td>Yes</td>
                     </tr>
                 </table>
-                
+
 
             </div>
             <div class="description">
@@ -179,12 +180,14 @@ td {
                     Karnatak and if keeps
                     his momentum going then surely a future hall of famer.
                 </p>
-                <p><ul style="list-style-type:none;">
-                <li><a href=" #"><i class="fa fa-twitter"
-                        style="font-size:20px;color:rgb(16, 62, 136);"></i></a></li>
+                <p>
+                <ul style="list-style-type:none;">
+                    <li><a href=" #"><i class="fa fa-twitter" style="font-size:20px;color:rgb(16, 62, 136);"></i></a>
+                    </li>
                     <li><a href="#"><i class="fa fa-facebook" style="font-size:20px;color:rgb(16, 62, 136);"></i></a>
                     </li>
-                </ul></p>
+                </ul>
+                </p>
                 <ul>
                     <li>PUBG : </li>
                     <li>
@@ -194,7 +197,7 @@ td {
                 </ul>
 
 
-               
+
 
             </div>
         </div>
@@ -203,55 +206,74 @@ td {
     </main>
     <div class="container">
         <div class="stats">
-            <table id="stats-table">
+            <table class="stats-table">
                 <thead>
-                <caption><em>Player Statistics</em></caption>
-                <tr>
-                    <th>Matches</th>
-                    <th>Innings</th>
-                    <th>Runs</th>
-                    <th>Wickets</th>
-                    <th>HS</th>
-                    <th>BB</th>
-                    <th>Overs</th>
-                    <th>3+ W</th>
-                    <th>5+ W</th>
-                    <th>Hattricks</th>
-                    <th>30+</th>
-                    <th>50+</th>
-                    <th>100+</th>
-                    <th>Avg</th>
-                    <th>NO</th>
-                    <th>Eco</th>
-                    <th>Catches</th>
-                    <th>Stumps</th>
-                    <th>RO</th>
-                </tr>
+                    <caption style="padding: 5px;"><em>Player Statistics</em></caption>
+                    <tr>
+                        <th>Matches</th>
+                        <th>Innings</th>
+                        <th>Runs</th>
+                        <th>Wickets</th>
+                        <th>HS</th>
+                        <th>HW</th>
+                        <th>Overs</th>
+                        <th>3+ W</th>
+                        <th>30+ R</th>
+                        <th>Avg</th>
+                        <th>Eco</th>
+                       
+                    </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th>48</th>
-                    <th>39</th>
-                    <th>3053</th>
-                    <th>52</th>
-                    <th>183</th>
-                    <th>32/7</th>
-                    <th>88</th>
-                    <th>7</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>14</th>
-                    <th>8</th>
-                    <th>3</th>
-                    <th>42</th>
-                    <th>11</th>
-                    <th>28.0</th>
-                    <th>27</th>
-                    <th>15</th>
-                    <th>4</th>
-                </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>15</td>
+                    </tr>
                 </tbody>
             </table>
+            <table class="stats-table">
+                <thead>
+                    
+                    <tr>
+                        <th>5+ W</th>
+                        <th>50+ R</th>
+                        <th>100+ R</th>
+                        <th>NO</th>
+                        <th>Hattricks</th>
+                        <th>Catches</th>
+                        <th>Stumps</th>
+                        <th>RO</th>
+                        <th>Captained</th>
+                        <th>Won</th>
+                        <th>Lost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8</td>
+                        <td>3</td>
+                        <td>42</td>
+                        <td>11</td>
+                        <td>28.0</td>
+                        <td>27</td>
+                        <td>15</td>
+                        <td>4</td>
+                        <td> 24</td>
+                        <td>18</td>
+                        <td>5</td> 
+                    </tr>
+                </tbody>
+            </table>
+            
         </div>
 
     </div>
