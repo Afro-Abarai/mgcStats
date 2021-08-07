@@ -5,6 +5,8 @@
     <title>
         mgcStats
     </title>
+    <link rel = "icon" href = 
+"logo.jpg" type = "image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,9 +34,11 @@
         }
 
         footer {
-            position: fixed;
+            position: relative;
             left: 0px;
             bottom: 0;
+            clear: both;  /* it keeps the bottom footer to not overlap with table or data above it. as they are using float: .
+             we use clear to nullify overlap caused because of float.*/
             width: 100%;
             height: 50px;
             margin: auto auto;
@@ -51,6 +55,32 @@
             margin: auto auto;
             padding: 20px;
         }
+        .batting{
+            float: left;
+            width:33%;
+            height:150px;
+            margin: auto;
+        }
+        .bowling {
+            float: left;
+            width: 31%;
+            height: 150px;
+            margin: auto;
+        }
+        .allrounder{
+           float: right;
+           width: 33%;
+           height:150px;
+           margin:auto;
+        }
+        
+        th,td{
+            text-align: left;
+        }
+        caption{
+            text-align: center;
+            padding: auto;
+        }
     </style>
 </head>
 
@@ -58,11 +88,94 @@
     <header>
         <div class="header-left">
             <img class="logo" src="logo.jpg">
-
+            
             <a class="header-right" href="#"> Sign-IN</a>
         </div>
     </header>
-    
+    <main>
+        <div class="players">
+            <h3>Players</h3>
+            <p><a href="#"><i class="fa fa-plus" style="color: dodgerblue;"></i></a></p>
+        </div>
+        <div class="teams">
+            <h3>Teams</h3>
+            <p><a href="#"><i class="fa fa-plus" style="color: dodgerblue;"></i></a></p>
+        </div>
+        <div class="matches">
+            <h3>Matches Played</h3>
+            <p><a href="#"><i class="fa fa-plus" style="color: dodgerblue;"></i></a></p>
+        </div>
+        <div class="rankings">
+            <h4 style="text-align:center">Rankings</h4>
+            <table class="batting">
+
+                    <thead>
+                        <caption><em>Batting</em></caption>
+                        <tr>
+                            <th>
+                               Rank
+                            </th>
+                            <th>
+                               Name 
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td><td>K L Rahul</td>
+                        </tr>
+                        <tr><td>2</td><td>Rohit Sharma</td></tr>
+                        <tr><td>3</td><td>Virat Kohli</td></tr>
+                        <tr><td>4</td><td>Rishabh Pant</td></tr>
+                        <tr><td>5</td><td>Kane Williamson</td></tr>
+                    </tbody>
+            </table>
+            <table class="bowling">
+                <thead>
+                    <caption><em>Bowling</em></caption>
+                    <tr>
+                        <th>
+                           Rank
+                        </th>
+                        <th>
+                           Name 
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td><td>K L Rahul</td>
+                    </tr>
+                    <tr><td>2</td><td>Rohit Sharma</td></tr>
+                    <tr><td>3</td><td>Virat Kohli</td></tr>
+                    <tr><td>4</td><td>Rishabh Pant</td></tr>
+                    <tr><td>5</td><td>Kane Williamson</td></tr>
+                </tbody>
+            </table>
+            <table class="allrounder">
+                <thead>
+                    <caption><em>All Rounder</em></caption>
+                    <tr>
+                        <th>
+                           Rank
+                        </th>
+                        <th>
+                           Name 
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td><td>K L Rahul</td>
+                    </tr>
+                    <tr><td>2</td><td>Rohit Sharma</td></tr>
+                    <tr><td>3</td><td>Virat Kohli</td></tr>
+                    <tr><td>4</td><td>Rishabh Pant</td></tr>
+                    <tr><td>5</td><td>Kane Williamson</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
 
 
 
