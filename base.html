@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> homepage</title>
+        <link rel="stylesheet" type="text/css" href="static\base.css">
+        <link rel = "icon" href = 
+"static\logo.jpg" type = "image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+    <body>
+        <div class="header">
+            <header>
+                <div >
+                    <span><img class="logo header-left" src="static\logo.jpg"></span>
+                    <p class=" header-left ">mgcStats</p>
+                  
+                </div>
+                <div >
+                    <p class="header-right"> <a  href="/login"> Sign-IN</a><p>
+                </div>
+            </header>
+        </div>
+
+
+       {%block homepage%}
+       {% endblock%}
+       {%block blockname %}
+       {%endblock%}
+
+        <footer>
+            <h3 class="footer-left">© 2021 mgcstats || Harsh Raj</h3>
+            <a href="#" id="ic"><i class="fa fa-facebook footer-right" style="color: dodgerblue;"></i></a>
+            <a href="#" id="ic"><i class="fa fa-twitter footer-right" style="color: dodgerblue;"></i></a>
+            <a href="#" id="ic"><i class="fa fa-google-plus-g footer-right" style="color: dodgerblue;"></i></a>
+    
+        </footer>
+    </body>
+</html>
